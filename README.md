@@ -1,7 +1,7 @@
 # PlanckLinux
 
 ![Lines of Code](https://tokei.rs/b1/github/GNUfault/PlanckLinux?style=for-the-badge)
-[![Repo Size](https://img.shields.io/github/GNUfault/PlanckLinux?style=for-the-badge)
+![Repo Size](https://img.shields.io/github/GNUfault/PlanckLinux?style=for-the-badge)
 
 Smallest Linux Distro
 
