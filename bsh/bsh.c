@@ -6,7 +6,9 @@
 #include <signal.h>
 
 int main() {
-    signal(SIGINT, SIG_IGN);
+    printf("\033[H\033[J"); // Clears screen
+
+	signal(SIGINT, SIG_IGN);
     char *line = 0;
     size_t len = 0;
     const char *p = geteuid() ? "$ " : "# ";
