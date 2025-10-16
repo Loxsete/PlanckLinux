@@ -1,0 +1,1 @@
+cmd_kernel/locking/built-in.a := echo >/dev/null; rm -f kernel/locking/built-in.a; ar cDPrST kernel/locking/built-in.a kernel/locking/mutex.o kernel/locking/semaphore.o kernel/locking/rwsem.o kernel/locking/percpu-rwsem.o

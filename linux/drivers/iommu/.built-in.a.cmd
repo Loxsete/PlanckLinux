@@ -1,0 +1,1 @@
+cmd_drivers/iommu/built-in.a := echo >/dev/null; rm -f drivers/iommu/built-in.a; ar cDPrST drivers/iommu/built-in.a drivers/iommu/amd/built-in.a drivers/iommu/intel/built-in.a drivers/iommu/arm/built-in.a

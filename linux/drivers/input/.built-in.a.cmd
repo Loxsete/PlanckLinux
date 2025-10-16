@@ -1,0 +1,1 @@
+cmd_drivers/input/built-in.a := echo >/dev/null; rm -f drivers/input/built-in.a; ar cDPrST drivers/input/built-in.a drivers/input/input.o drivers/input/input-compat.o drivers/input/input-mt.o drivers/input/input-poller.o drivers/input/ff-core.o drivers/input/touchscreen.o drivers/input/keyboard/built-in.a

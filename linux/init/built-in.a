@@ -1,0 +1,17 @@
+!<thin>
+//                                              92        `
+main.o/
+version.o/
+do_mounts.o/
+do_mounts_initrd.o/
+initramfs.o/
+calibrate.o/
+init_task.o/
+
+/0              0           0     0     644     21064     `
+/8              0           0     0     644     1668      `
+/19             0           0     0     644     6932      `
+/32             0           0     0     644     2024      `
+/52             0           0     0     644     12160     `
+/65             0           0     0     644     3612      `
+/78             0           0     0     644     8500      `

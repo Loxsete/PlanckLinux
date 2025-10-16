@@ -1,0 +1,37 @@
+!<thin>
+//                                              226       `
+tty_io.o/
+n_tty.o/
+tty_ioctl.o/
+tty_ldisc.o/
+tty_buffer.o/
+tty_port.o/
+tty_mutex.o/
+tty_ldsem.o/
+tty_baudrate.o/
+tty_jobctrl.o/
+n_null.o/
+vt/vt_ioctl.o/
+vt/vc_screen.o/
+vt/selection.o/
+vt/keyboard.o/
+vt/vt.o/
+vt/defkeymap.o/
+
+/0              0           0     0     644     25036     `
+/10             0           0     0     644     14680     `
+/19             0           0     0     644     5788      `
+/32             0           0     0     644     4960      `
+/45             0           0     0     644     3680      `
+/59             0           0     0     644     6204      `
+/71             0           0     0     644     1336      `
+/84             0           0     0     644     2220      `
+/97             0           0     0     644     1724      `
+/113            0           0     0     644     4108      `
+/128            0           0     0     644     2392      `
+/138            0           0     0     644     8856      `
+/153            0           0     0     644     6920      `
+/169            0           0     0     644     4540      `
+/185            0           0     0     644     19924     `
+/200            0           0     0     644     40896     `
+/209            0           0     0     644     10352     `

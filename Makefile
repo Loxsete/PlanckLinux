@@ -5,6 +5,7 @@ linux:
 	cp linux/arch/x86/boot/bzImage hdd/boot
 
 bsh:
+        git clone --depth https://github.com/GNUfault/bsh.git
 	make -C bsh
 	cp bsh/bsh initramfs/bin
 
