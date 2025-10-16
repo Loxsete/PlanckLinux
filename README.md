@@ -1,0 +1,2 @@
+# PlanckLinux
+Smallest Linux Distro
