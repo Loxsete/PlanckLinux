@@ -1,7 +1,7 @@
-CC      := gcc
-CFLAGS  := -Wall -Wextra -O2 -std=c11
-QEMU    := qemu-system-i386
-NPROC   := $(shell nproc)
+CC := gcc
+CFLAGS := -Wall -Wextra -O2 -std=c11 -m32 -static
+QEMU := qemu-system-i386
+NPROC := $(shell nproc)
 
 all: linux bsh hello initramfs grub
 
@@ -11,23 +11,32 @@ linux:
 
 bsh:
 	if [ ! -d bsh ]; then \
-		git clone https://github.com/GNUfault/bsh.git; \
+		git clone https://github.com/Loxsete/bsh.git; \
 	fi
+	$(MAKE) -C bsh clean
 	$(MAKE) -C bsh
 	mkdir -p initramfs/bin
+	cp bsh/bin/* initramfs/bin/
 	cp bsh/bsh initramfs/bin/
-	cp bsh/cmds/* initramfs/bin/ 2>/dev/null || true
+	chmod +x initramfs/bin/*
+	cd initramfs && \
+		find . -print | cpio -H newc -o > ../hdd/boot/initramfs.cpio && \
+		cd ..
 
 hello:
-	$(MAKE) -C hello
+	$(MAKE) -C hello || true
 	mkdir -p initramfs/bin
 	cp hello/hello initramfs/bin/hello
+	cd initramfs && \
+		find . -print | cpio -H newc -o > ../hdd/boot/initramfs.cpio && \
+		cd ..
+
 
 initramfs: bsh hello
 	rm -f hdd/boot/initramfs.cpio
 	cd initramfs && \
-	find . -print | cpio -H newc -o > ../hdd/boot/initramfs.cpio && \
-	cd ..
+		find . -print | cpio -H newc -o > ../hdd/boot/initramfs.cpio && \
+		cd ..
 
 grub:
 	grub-mkrescue -o linux.iso hdd
