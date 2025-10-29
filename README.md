@@ -1,8 +1,23 @@
 # PlanckLinux
 
-Smallest Linux Distro
+PlanckLinux is a minimal Linux distribution designed to be small and lightweight.  
 
-<img width="720" height="480" alt="PlanckLinux" src="https://github.com/user-attachments/assets/08a6c634-12e0-4f1a-ae25-0be185da7d0e" />
+## Features
 
-## TODO
-- Compress initramfs with xz
+- Uses **bsh**, a custom shell written in C (my fork of https://github.com/GNUfault/PlanckLinux/)
+- <img width="518" height="427" alt="image" src="https://github.com/user-attachments/assets/f16a15c2-644e-4d21-9691-58780b21efb9" />
+
+## Getting Started
+
+Clone the repository and build the system:
+
+```bash
+git clone https://github.com/Loxsete/PlanckLinux.git
+cd PlanckLinux
+make bsh
+make run
+```
+
+## Original authors
+
+[GNUfault](https://github.com/GNUfault)
