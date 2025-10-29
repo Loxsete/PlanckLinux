@@ -1395,7 +1395,7 @@ endif
 ifneq "$(KERNELVERSION)" "5.15.194"
 include/config/auto.conf: FORCE
 endif
-ifneq "$(CC)" "gcc"
+ifneq "$(CC)" "gcc -std=gnu89"
 include/config/auto.conf: FORCE
 endif
 ifneq "$(LD)" "ld"
@@ -1404,7 +1404,7 @@ endif
 ifneq "$(srctree)" "."
 include/config/auto.conf: FORCE
 endif
-ifneq "$(CC_VERSION_TEXT)" "gcc (GCC) 14.2.1 20250405"
+ifneq "$(CC_VERSION_TEXT)" "gcc (GCC) 15.2.1 20250813"
 include/config/auto.conf: FORCE
 endif
 ifneq "$(NM)" "nm"

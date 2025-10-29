@@ -1,6 +1,6 @@
-/* This file is auto generated, version 4 */
+/* This file is auto generated, version 7 */
 #define UTS_MACHINE "i386"
-#define UTS_VERSION "#4 Thu Oct 16 16:13:30 PDT 2025"
-#define LINUX_COMPILE_BY "connor"
-#define LINUX_COMPILE_HOST "Void-T480s"
-#define LINUX_COMPILER "gcc (GCC) 14.2.1 20250405, GNU ld (GNU Binutils) 2.44"
+#define UTS_VERSION "#7 Wed Oct 29 15:43:02 UTC 2025"
+#define LINUX_COMPILE_BY "loxsete"
+#define LINUX_COMPILE_HOST "archlinuxfemboy"
+#define LINUX_COMPILER "gcc (GCC) 15.2.1 20250813, GNU ld (GNU Binutils) 2.45.0"
