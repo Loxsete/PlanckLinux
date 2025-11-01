@@ -1,4 +1,4 @@
-cmd_arch/x86/lib/hweight.o := gcc -std=gnu89 -Wp,-MMD,arch/x86/lib/.hweight.o.d -nostdinc -isystem /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include -I./arch/x86/include -I./arch/x86/include/generated  -I./include -I./arch/x86/include/uapi -I./arch/x86/include/generated/uapi -I./include/uapi -I./include/generated/uapi -include ./include/linux/compiler-version.h -include ./include/linux/kconfig.h -D__KERNEL__ -fmacro-prefix-map=./= -D__ASSEMBLY__ -fno-PIE -m32    -c -o arch/x86/lib/hweight.o arch/x86/lib/hweight.S
+cmd_arch/x86/lib/hweight.o := gcc -std=gnu89 -Wp,-MMD,arch/x86/lib/.hweight.o.d -nostdinc -isystem /usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/include -I./arch/x86/include -I./arch/x86/include/generated  -I./include -I./arch/x86/include/uapi -I./arch/x86/include/generated/uapi -I./include/uapi -I./include/generated/uapi -include ./include/linux/compiler-version.h -include ./include/linux/kconfig.h -D__KERNEL__ -fmacro-prefix-map=./= -D__ASSEMBLY__ -fno-PIE -m32    -c -o arch/x86/lib/hweight.o arch/x86/lib/hweight.S
 
 source_arch/x86/lib/hweight.o := arch/x86/lib/hweight.S
 

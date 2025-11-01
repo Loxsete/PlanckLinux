@@ -1404,7 +1404,7 @@ endif
 ifneq "$(srctree)" "."
 include/config/auto.conf: FORCE
 endif
-ifneq "$(CC_VERSION_TEXT)" "gcc (GCC) 15.2.1 20250813"
+ifneq "$(CC_VERSION_TEXT)" "gcc (GCC) 14.2.1 20250405"
 include/config/auto.conf: FORCE
 endif
 ifneq "$(NM)" "nm"
